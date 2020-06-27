@@ -12,10 +12,9 @@ import (
 	"path/filepath"
 	"sync"
 	"time"
-
-	"github.com/Sirupsen/logrus"
-	"github.com/TheCreeper/OpenPushOver/notification"
-	"github.com/TheCreeper/OpenPushOver/pushover"
+	"github.com/sirupsen/logrus"
+	"github.com/itsjwala/OpenPushOver/notification"
+	"github.com/itsjwala/OpenPushOver/pushover"
 )
 
 // Create a new logger
