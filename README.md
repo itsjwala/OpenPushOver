@@ -1,8 +1,20 @@
-# OpenPushOver
+<div align="center">
+<h2>OpenPushOver</h2> 
+<p>multiplatform Pushover alerts notifier client</p>
+</div>
 
-![ScreenShot](http://files.firebit.co.uk/i/06521.png)
+<div align="center">
+<img src="https://pushover.net/images/icon-72.png" alt="Pushover logo">
+<img src = "https://image.flaticon.com/icons/png/32/14/14980.png" style="position:relative; bottom:1rem; left:0.5rem">
+<img width="80" height="80" src="https://cdn.worldvectorlogo.com/logos/golang-gopher.svg" alt="golang gopher">
+</div>
+
+
+---
 
 - Requirements
+
+    for Linux
 
     - GNU/Linux only
     - libnotify (GNU/Linux) for notifications
@@ -54,3 +66,6 @@
     ]
 }
 ```
+
+
+> This is fork of `TheCreeper/OpenPushOver` with some modifications
