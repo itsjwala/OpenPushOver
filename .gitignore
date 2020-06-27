@@ -31,3 +31,4 @@ bin/
 conf/
 cache/
 pushover/examples/push-send/push-send
+examples/config.json

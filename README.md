@@ -28,7 +28,7 @@
 ## Sample Config
 - You need to create the cache directory
 
-- CheckFrequencySeconds can not be less than 5 seconds and defaults to 5 seconds if set to anything less.
+- CheckSeconds can not be less than 5 seconds and defaults to 5 seconds if set to anything less.
 
 - Default configuration file is located in the same directory as the exec however can be overridden using the -config flag.
 
@@ -40,8 +40,8 @@
 {
     "Globals": {
         "CacheDir" : "./cache",
-        "DeviceName": "Fusion",
-        "CheckFrequencySeconds": 5
+        "DeviceName": "Fusion", // new device will be registered
+        "CheckSeconds": 5 // poll every 5 seconds
     },
     "Proxys": [
         {
@@ -55,9 +55,7 @@
     ],
     "Accounts": [
         {
-            "DeviceUUID": "",
-            "Register": true,
-            "Force" : false,
+            "DeviceUUID": "", //keep this empty
             "Username": "email",
             "Password": "password",
             "Key": "testkey123456789",
