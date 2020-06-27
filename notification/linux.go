@@ -5,7 +5,7 @@ import (
 	"path/filepath"
 )
 
-func (m *Message) Push() (err error) {
+func linuxPush(m *Message) (err error) {
 
 	if (len(m.Title) < 1) && (len(m.Body) < 1) {
 

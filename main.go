@@ -173,11 +173,9 @@ func (cfg *ClientConfig) LaunchClient(wg *sync.WaitGroup, acn *Account) {
 					}
 				}
 
-				v.Title = fmt.Sprintf("%s (%s)", v.Title, time.Unix(v.Date, 0).Format("2006-01-02 15:04:05"))
-
 				// trigger the desktop notifications
 				n := &notification.Message{
-
+					
 					Title:    v.Title,
 					Body:     v.Message,
 					Urgency:  PushoverToNotifyPriority[v.Priority],
@@ -187,12 +185,12 @@ func (cfg *ClientConfig) LaunchClient(wg *sync.WaitGroup, acn *Account) {
 				}
 				err = n.Push()
 				if err != nil {
-
 					log.Warn(err)
 				}
-
+				
+				v.Title = fmt.Sprintf("%s (%s)", v.Title, time.Unix(v.Date, 0).Format("2006-01-02 15:04:05"))
 				// Print the notification to terminal
-				log.Infof("[%d]: %s: %s", v.ID, v.Title, v.Message)
+				log.Infof("%s: %s", v.Title, v.Message)
 			}
 
 			err = client.MarkReadHighest()
