@@ -3,8 +3,7 @@ package main
 import (
 	"net"
 	"time"
-
-	"code.google.com/p/go.net/proxy"
+	"golang.org/x/net/proxy"
 )
 
 type ConnHandler struct {
