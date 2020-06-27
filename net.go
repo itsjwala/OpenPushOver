@@ -1,9 +1,9 @@
 package main
 
 import (
+	"golang.org/x/net/proxy"
 	"net"
 	"time"
-	"golang.org/x/net/proxy"
 )
 
 type ConnHandler struct {
