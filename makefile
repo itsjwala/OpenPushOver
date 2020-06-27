@@ -1,13 +1,13 @@
-#!/usr/bin/make -f
+#!/usr/bin/env make -f
 
-SHELL=/bin/bash
+SHELL=`which bash`
 bin=bin
 name=push
 
 all: build
 
 build:
-	go build -v -o bin/$(name)
+	go build -v -o $(bin)/$(name)
 
 clean:
 	go clean -x
