@@ -1,7 +1,6 @@
 package notification
 import (
 	"os/exec"
-	"fmt"
 )
 func darwinPush(m *Message) (err error) {
 	if len(m.Title) == 0 {
