@@ -2,7 +2,7 @@
 
 SHELL=`which bash`
 bin=bin
-name=push
+name=OpenPushOver
 
 all: build
 
